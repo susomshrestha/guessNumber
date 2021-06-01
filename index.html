@@ -2,14 +2,15 @@
   <head>
     <title>Guess Number</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <div class="wrapper">
       <!-- reset button start -->
-      <div class="reset-div">
+      <div class="head-div">
         <button class="btn reset">RESET</button>
+        <button class="btn again">AGAIN</button>
       </div>
       <!-- reset button end -->
       <!-- title start -->
@@ -27,14 +28,14 @@
       <!-- guess and result block start -->
       <div class="guess-result">
         <div class="input-div">
-          <input type="number" /> <br />
+          <input class="number" type="number" /> <br />
           <button class="btn check">CHECK</button>
         </div>
         <div class="result-div">
           <div class="result">Correct</div>
           <div class="score">Score: <span class="score-value">20</span></div>
           <div class="highscore">
-            Highscore: <span class="score-value">0</span>
+            Highscore: <span class="highscore-value">0</span>
           </div>
         </div>
       </div>
