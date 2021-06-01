@@ -1,6 +1,44 @@
 <html>
   <head>
+    <title>Guess Number</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- reset button start -->
+      <div class="reset-div">
+        <button class="btn reset">RESET</button>
+      </div>
+      <!-- reset button end -->
+      <!-- title start -->
+      <div class="title-div">
+        <h1>Guess The Correct Number</h1>
+        <h3>(Between 1 and 20)</h3>
+      </div>
+      <!-- title end -->
+      <!-- guessed number block start -->
+      <div class="guess-block">
+        <hr />
+        <div class="number-block">?</div>
+      </div>
+      <!-- guessed number block end -->
+      <!-- guess and result block start -->
+      <div class="guess-result">
+        <div class="input-div">
+          <input type="number" /> <br />
+          <button class="btn check">CHECK</button>
+        </div>
+        <div class="result-div">
+          <div class="result">Correct</div>
+          <div class="score">Score: <span class="score-value">20</span></div>
+          <div class="highscore">
+            Highscore: <span class="score-value">0</span>
+          </div>
+        </div>
+      </div>
+      <!-- guess and result block end -->
+    </div>
+  </body>
 </html>
