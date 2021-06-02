@@ -38,20 +38,27 @@ function checkInput() {
   const value = Number(guess.value);
   if (!value) {
     result.textContent = "Enter a valid number."
+  } else if (value === 1) {
+    scoreValue--;
+    displayResult('You Lost!');
   } else {
     if (value < randomNumber) {
-      result.textContent = "Guess a higher number."
+      displayResult('Guess a higher number.');
       scoreValue--;
     } else if (value > randomNumber) {
-      result.textContent = "Guess a lower number."
+      displayResult('Guess a lower number.');
       scoreValue--;
     } else {
-      result.textContent = "Congratulations! You won."
+      displayResult('Congratulations! You won.');
       wrapper.style.backgroundColor = 'green';
       checkHighScore();
     }
     score.textContent = scoreValue;
   }
+}
+
+function displayResult(message) {
+  result.textContent = message;
 }
 
 function checkHighScore() {
@@ -62,7 +69,6 @@ function checkHighScore() {
 }
 
 checkButton.addEventListener('click', checkInput);
-
 
 resetButton.addEventListener('click', reset);
 
