@@ -27,6 +27,27 @@ body {
   color: var(--text-color);
   font-weight: bold;
   font-size: var(--font-size);
+  cursor: pointer;
+}
+
+.wrapper .again:hover {
+  background: #89CE94;
+  color: white;
+}
+
+.wrapper .reset:hover {
+  background: #C73E1D;
+  color: white;
+}
+
+.wrapper .check:hover:not([disabled]) {
+  background: #759AAB;
+  color: white;
+}
+
+.wrapper .check:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
 }
 
 .wrapper .title-div h3 {
